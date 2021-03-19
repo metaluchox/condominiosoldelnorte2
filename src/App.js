@@ -1,24 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Redirect } from 'react-router';
+import { NavbarScreen } from './ui/NavbarScreen';
+import { InicioScreen } from './components/InicioScreen';
+import { NewsScreen } from './components/NewsScreen';
+import { GastoComunScreen } from './components/GastoComunScreen';
+import { FooterScreen } from './ui/FooterScreen';
+import TurnoAseoScreen from './components/TurnoAseoScreen';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>   
+        <NavbarScreen />  
+        <TurnoAseoScreen/>                
+        <Switch>  
+          <Route exact path="/inicio" component={InicioScreen} />
+          <Route exact path="/news" component={ NewsScreen } />
+          <Route exact path="/gastoComun" component={ GastoComunScreen } />
+          <Redirect to="/inicio" />
+        </Switch>
+      </Router>
+      <FooterScreen />
+    </>
   );
 }
 
