@@ -10,7 +10,7 @@ const urlFile ="https://drive.google.com/drive/folders/18j8Vo1qSHeT3okLbddRPyxgd
                 <Row>
                     <Col sm>
 
-                        <Card border="primary" style={{ width: '18rem' }}>
+                        <Card border="primary" >
                             <Card.Header> Técnico en citofonos </Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -25,7 +25,7 @@ const urlFile ="https://drive.google.com/drive/folders/18j8Vo1qSHeT3okLbddRPyxgd
 
                     </Col>
                     <Col sm>
-                        <Card border="primary" style={{ width: '18rem' }}>
+                        <Card border="primary" >
                             <Card.Header>Cambio correo</Card.Header>
                             <Card.Body>
                                 <Card.Text>
@@ -42,7 +42,7 @@ Ejemplos:
 
                     </Col>
                     <Col sm>
-                        <Card border="primary" style={{ width: '18rem' }}>
+                        <Card border="primary" >
                             <Card.Header>Carpetas y archivos</Card.Header>
                             <Card.Body>
                                 <Card.Title>

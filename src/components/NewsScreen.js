@@ -3,7 +3,7 @@ import { Accordion,Card,Image } from 'react-bootstrap';
 export const NewsScreen = () => {
     return (
         <>
-            <Accordion defaultActiveKey="0">
+            <Accordion >
                 <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="0">
                         <h2>Plan de mejoramiento de servicio de telecomunicación.</h2>
